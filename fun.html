@@ -1,1 +1,14 @@
 
+<html>
+<head>
+	<script>
+	var connection = navigator.connection || navigator.mozConnection || navigator.webkitConnection;
+var type = connection.type;
+console.log(connection.type)
+	</script>
+</head>
+<body>
+
+	<script>document.write(type);</script>
+</body>
+</html>
