@@ -39,7 +39,7 @@ function createPayment(){
     }
    };
 
-  fetch('/api/paypal/ec/pd/create-payment/', {
+  fetch('https://paypal-integration-sample.herokuapp.com/api/paypal/ec/pd/create-payment/', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
