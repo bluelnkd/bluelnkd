@@ -41,7 +41,7 @@ function createPayment(){
 
   fetch('https://paypal-integration-sample.herokuapp.com/api/paypal/ec/pd/create-payment/', {
       method: 'POST',
-      mode: 'cors',
+      mode: 'no-cors',
       headers: {
         'Content-Type': 'application/json'
       },
