@@ -13,6 +13,9 @@
 	<header>
 		<h1>Happy button testing</h1>
 	</header>
+	<h2>Setting eligibility</h2>
+	<p>To set eligibility you'll need to be on the PayPal network with your device, in the Safari Browser, and with your cookies cleared.</p>
+	<p>Once that is set, you'll need to <a href=" https://www.paypal.com/platform/setguid?guid=bc487d1818800000000305d4fcb413c4">set your Global User Identification (GUID)</a> without an active PayPal user session. </p>
 	<h2>Digital Good, no shipping: $0.01</h2>
 	<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
 	<input type="hidden" name="cmd" value="_s-xclick">
@@ -22,16 +25,18 @@
 	</form>
 
 
-	<h2>Digital Good, billing as landing: $0.01</h2>
-	<form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+	<h2>Digital Good, no shipping: $0.01</h2>
+	<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
 	<input type="hidden" name="cmd" value="_s-xclick">
-	<input type="hidden" name="hosted_button_id" value="43REFYAK8MR3A">
-	<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+	<input type="hidden" name="hosted_button_id" value="YPUYYFEMLM696">
+	<input type="hidden" name="landing_page" value="BILLING">
+	<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
 	<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
 	</form>
 
 
-	<h2>Shipping and Tax: $0.01. $5 Shipping for CA, $2 for rest of US</h2>
+	<h2>Shipping and Tax Add to Cart</h2>h2>
+      	<p>$5 Shipping for CA, $2 for rest of US. If # of items is high enough taxes will apply to the transaction at 6% for Texas, 9% for California, and 8% for rest of the US.</p>
 	<form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
 	<input type="hidden" name="cmd" value="_s-xclick">
 	<input type="hidden" name="hosted_button_id" value="FJKQHFSFDF7SC">
